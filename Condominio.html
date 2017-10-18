@@ -81,12 +81,27 @@ li.dropdown {
     RG: <input type="text" name="RG" value="20000563-5"> 
     Data de Nascimento: <input type="text" name="data" value="20/08/1995"> <br><br>
     Telefone: <input type="text" name="telefone" value="(41) 9848-6558"> 
-    Telefone: <input type="text" name="telefone" value="(41) 9848-6558">
-    Data: <input type="text" name="telefone" value="20/08/2017">
+    Telefone: <input type="text" name="telefone" value="(41) 9848-6558">    
+    <form action="/action_page.php">
+  Data da visita:
+  <input type="date" name="bday" max="2017-12-31">
     Hora: <input type="text" name="hora" value="18:00">
 </form> <br>
-	<input type="button" onclick="alert('Cancelado!')" value="Cancelar">
-    <input type="button" onclick="alert('Novo visitante salvo!')" value="Salvar">
+	
+	<button onclick="salvar()">Salvar</button>
+<script>
+function salvar() {
+    alert("Novo visitante salvo!");
+}
+</script>
+
+<button onclick="Excluir()">Excluir</button>
+
+<script>
+function Excluir() {
+    confirm("Realmente eseja excluir esse visitante?");
+}
+</script>
     
 
 </body>
